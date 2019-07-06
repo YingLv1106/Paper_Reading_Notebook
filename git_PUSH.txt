@@ -1,0 +1,6 @@
+1. cd 本地仓库路径
+2. git init
+3. git add *   把添加的文件提交到本地仓库
+4. git commit -m "first commit"  填写提交备注
+5. git remote add origin git@github.com:YingLv1106/Paper_Reading_Notebook.git  把本地库与远程库关联
+6. git push -u origin master   远程库地址推送至远程仓库
