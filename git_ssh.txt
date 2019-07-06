@@ -1,0 +1,16 @@
+1.复制SSH链接，在git bash输入：git clone SSH链接
+>> git clone git@github.com:YingLv1106/Paper_Reading_Notebook.git
+显示没有权限（无公钥）
+
+2. 输入：ssh-keygen -t rsa ，连续三次回车
+通过结果显示及cat命令查看可知public key存放于id_rsa.pub中
+
+3. cd ~/.ssh（去指定目录下）
+   输入：cat id_rsa.pub  复制所有内容
+4. 到github右上角账户管理-Setting下面找到左侧“SSH and GPG keys”菜单，
+   接着点击“Add SSH key”，在”title”栏输入一个自己喜欢的标题，
+   “key”栏中粘贴刚刚复制的公钥内容，最后点击“Add key”按钮。
+5. 输入：ssh -vT git@github.com ，显示如图则成功
+6. 六、再次clone远程库,成功！可以在远程库修改，文件，同步本地！
+
+
